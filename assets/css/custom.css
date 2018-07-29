@@ -47,9 +47,23 @@ button, input, .btn, a.btn {
   font-weight: bold;
 }
 
+button.btn:focus {
+  outline: none;
+}
+
 .btn-danger {
   background-color: #dd5638 !important;
   border-color: #d95131 !important;
+}
+
+.btn-success {
+  background: #79b044 !important;
+  border: none !important;
+}
+
+.btn-success:hover {
+  background: #6a9b3d !important;
+  border-color: #6a9b3d !important;
 }
 
 img {
@@ -84,6 +98,23 @@ img {
 
 .badge.social.gplus:hover {
   background: #db4b39;
+}
+
+blockquote {
+  padding: 0;
+  border: none;
+  font-style: italic;
+  text-align: left;
+}
+
+blockquote cite {
+  display: block;
+  color: #777;
+  margin: 15px 0 0 0;
+}
+
+blockquote:before {
+  display: none;
 }
 
 /* === HERO === */
@@ -238,6 +269,40 @@ section h3 {
   display: block;
   font-size: 20px;
   font-weight: normal;
+}
+
+#kudos {
+  text-align: center;
+}
+
+.testimonial {
+  margin-bottom: 60px;
+}
+
+.testimonial img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+#signup {
+  text-align: center;
+  background: url('../img/hipster-stuff.jpg') center center repeat fixed;
+  background-size: cover;
+  color: white;
+  padding: 140px 0;
+}
+
+#signup h2 {
+  font-weight: normal;
+}
+
+#signup h2 strong {
+  border-bottom: solid 2px #dd5638;
+}
+
+#signup btn {
+  font-size: 24px;
 }
 
 /* === CUSTOM ICON SPRITES === */
